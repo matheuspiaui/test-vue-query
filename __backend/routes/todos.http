@@ -1,0 +1,30 @@
+# GET todos
+GET http://localhost:3000/todos
+
+#############################################
+
+# POST new todo
+POST http://localhost:3000/todos
+content-type: application/json
+
+{
+    "todo": "teste",
+    "done": false
+}
+
+############################################
+
+# PUT todo
+PUT http://localhost:3000/todos/2
+content-type: application/json
+
+{
+    "todo": "sample test updated",
+    "done": false
+}
+
+##########################################
+
+
+# DELETE todo
+DELETE http://localhost:3000/todos/2
